@@ -1,0 +1,119 @@
+{
+  "title": "in-my-town",
+  "environment": "Street",
+  "voices": {
+    "Narrator": "Daniel",
+    "Alex": "Eddy (English (US))",
+    "Ryan": "Reed (English (US))"
+  },
+  "characters": [
+    { "name": "Alex", "preset": "Alex", "at": [1.5, 24], "facing": [1.5, 0] },
+    { "name": "Ryan", "preset": "Ryan", "at": [-13, 4], "facing": [1.5, 4] },
+    { "name": "Waver", "preset": "Waver", "at": [0, -42], "facing": [0, 0] }
+  ],
+  "beats": [
+    {
+      "id": "b01", "speaker": "Narrator", "text": "In my town, there's one rule. Never wave back.",
+      "actions": [
+        { "do": "lighting", "preset": "night" },
+        { "do": "gesture", "who": "Waver", "name": "Wave", "loop": true },
+        { "do": "camera", "pos": [3.5, 2.5, -5], "target": "Alex", "fov": 26, "toFov": 50, "tween": 3.3 },
+        { "do": "walk", "who": "Alex", "to": [1.5, 4], "speed": 6 }
+      ]
+    },
+    {
+      "id": "b02", "speaker": "Narrator", "text": "Ryan moved here last week. Nobody told him.",
+      "actions": [
+        { "do": "camera", "pos": [2.5, 4.5, 9], "target": "Ryan", "fov": 56 },
+        { "do": "walk", "who": "Ryan", "to": [-2.5, 4], "speed": 14 },
+        { "t": 0.2, "do": "face", "who": "Alex", "target": [-2.5, 4] },
+        { "t": 1.1, "do": "face", "who": "Ryan", "target": [1.5, 4] },
+        { "t": 1.2, "do": "gesture", "who": "Ryan", "name": "Wave" }
+      ]
+    },
+    {
+      "id": "b03", "speaker": "Alex", "text": "Dude. Don't do that here.",
+      "actions": [
+        { "do": "camera", "pos": [-3.5, 4.5, 9], "target": "Alex", "fov": 56 },
+        { "do": "gesture", "who": "Alex", "name": "Shocked" }
+      ]
+    },
+    {
+      "id": "b04", "speaker": "Ryan", "text": "It's just a wave?",
+      "actions": [
+        { "do": "camera", "pos": [2.5, 4.5, 9], "target": "Ryan", "fov": 56 },
+        { "do": "gesture", "who": "Ryan", "name": "Confused" }
+      ]
+    },
+    {
+      "id": "b05", "speaker": "Alex", "text": "See him? He's been waving since before I was born.",
+      "actions": [
+        { "do": "camera", "pos": [-3.5, 4.5, 9], "target": "Alex", "fov": 56 },
+        { "do": "face", "who": "Alex", "target": [1.5, -42] },
+        { "t": 0.2, "do": "gesture", "who": "Alex", "name": "Point" },
+        { "t": 1.3, "do": "camera", "pos": [0, 4, -20], "target": "Waver", "fov": 45, "toFov": 18, "tween": 3.5 }
+      ]
+    },
+    {
+      "id": "b06", "speaker": "Ryan", "text": "What happens if someone waves back?",
+      "actions": [
+        { "do": "face", "who": "Ryan", "target": [-2.5, -42] },
+        { "do": "camera", "pos": [-1, 4.3, -3], "target": "Ryan", "fov": 56 }
+      ]
+    },
+    {
+      "id": "b07", "speaker": "Alex", "text": "Nobody knows. Nobody ever has.",
+      "actions": [
+        { "do": "face", "who": "Alex", "target": [-2.5, 4] },
+        { "do": "camera", "pos": [-3.5, 4.5, -1], "target": "Alex", "fov": 56 }
+      ]
+    },
+    {
+      "id": "b08", "duration": 2.4,
+      "actions": [
+        { "do": "camera", "pos": [-1.5, 5, 10], "look": [-1.2, 3.2, -42], "fov": 32 },
+        { "t": 0.4, "do": "gesture", "who": "Ryan", "name": "Wave" }
+      ]
+    },
+    {
+      "id": "b09", "speaker": "Alex", "text": "Ryan. No!",
+      "actions": [
+        { "do": "camera", "pos": [-3.5, 4.5, -1], "target": "Alex", "fov": 48 },
+        { "do": "gesture", "who": "Alex", "name": "Shocked" }
+      ]
+    },
+    {
+      "id": "b10", "duration": 3.6,
+      "actions": [
+        { "do": "camera", "pos": [0, 4, -22], "target": "Waver", "fov": 22 },
+        { "t": 0.3, "do": "stopGesture", "who": "Waver" },
+        { "t": 1.2, "do": "walk", "who": "Waver", "to": [0, -85], "speed": 5 }
+      ]
+    },
+    {
+      "id": "b11", "speaker": "Narrator", "text": "The next day, Ryan wasn't at school.",
+      "actions": [
+        { "do": "lighting", "preset": "morning" },
+        { "do": "hide", "who": "Waver" },
+        { "do": "teleport", "who": "Ryan", "to": [0, -42], "facing": [0, 0] },
+        { "do": "teleport", "who": "Alex", "to": [1.5, 24], "facing": [1.5, 0] },
+        { "do": "camera", "pos": [3.5, 2.5, -5], "target": "Alex", "fov": 26, "toFov": 50, "tween": 3.3 },
+        { "t": 0.1, "do": "walk", "who": "Alex", "to": [1.5, 6], "speed": 6 }
+      ]
+    },
+    {
+      "id": "b12", "duration": 2.6,
+      "actions": [
+        { "do": "camera", "pos": [0, 4, -22], "target": "Ryan", "fov": 30, "toFov": 20, "tween": 2.4 },
+        { "do": "gesture", "who": "Ryan", "name": "Wave", "loop": true }
+      ]
+    },
+    {
+      "id": "b13", "duration": 2.8, "text": "Part 2?", "big": true,
+      "actions": [
+        { "do": "camera", "pos": [1.2, 4.4, 0.5], "target": "Alex", "fov": 50 },
+        { "do": "gesture", "who": "Alex", "name": "Shocked" }
+      ]
+    }
+  ]
+}

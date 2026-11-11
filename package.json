@@ -1,0 +1,15 @@
+{
+  "name": "roblox-ai-video",
+  "private": true,
+  "type": "module",
+  "version": "0.0.0",
+  "description": "Prompt-to-MP4 Roblox character animation video generator",
+  "scripts": {
+    "timeline": "node production/scripts/build-timeline.mjs",
+    "push": "node production/scripts/push-to-studio.mjs",
+    "record": "node production/scripts/record-take.mjs",
+    "render": "node production/scripts/render-final.mjs",
+    "fetch-audio": "node production/scripts/fetch-audio.mjs",
+    "rojo:serve": "rojo serve game/default.project.json"
+  }
+}

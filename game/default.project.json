@@ -1,0 +1,24 @@
+{
+  "name": "roblox-ai-video",
+  "tree": {
+    "$className": "DataModel",
+    "ReplicatedStorage": {
+      "$className": "ReplicatedStorage",
+      "Characters": { "$path": "src/characters" },
+      "Animations": { "$path": "src/animations" },
+      "Environments": { "$path": "src/environments" },
+      "Camera": { "$path": "src/camera" }
+    },
+    "ServerScriptService": {
+      "$className": "ServerScriptService",
+      "Scenes": { "$path": "src/scenes" }
+    },
+    "StarterPlayer": {
+      "$className": "StarterPlayer",
+      "StarterPlayerScripts": {
+        "$className": "StarterPlayerScripts",
+        "$path": "src/client"
+      }
+    }
+  }
+}
